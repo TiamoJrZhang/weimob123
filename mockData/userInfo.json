@@ -1,0 +1,16 @@
+{
+    "user_name": "Jack",
+    "Avatar": "images/avatar.jpg",
+    "user_level": "白金会员",
+    "all_order": {
+        "w_pay": 1,
+        "w_deliver": 2,
+        "w_receive": 2,
+        "g_right":1
+    },
+    "user_info": {
+        "money_left": 100,
+        "points": 200,
+        "yhq": 10
+    }
+}

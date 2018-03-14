@@ -1,0 +1,185 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html * {
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: #F8F8F8;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 0.36rem;
+    height: 44px;
+    padding: 0 0.3rem;
+    background: #fff;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 49px;
+    background: #fff;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    /*抖动问题*/
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#footer .active {
+    color: #F56FA6;
+}
+
+#footer a {
+    flex: 1;
+    text-align: center;
+    font-size: 0.18rem;
+    color: #646464;
+}
+
+#footer a {
+    margin-top: 0.09rem;
+}
+
+/*设置单边border*/
+
+@media (-webkit-device-pixel-ratio: 1.5),
+(min-device-pixel-ratio: 1.5) {
+    .border-bottom:after {
+        -ms-transform: scaleY(.7);
+        -o-transform: scaleY(.7);
+        -webkit-transform: scaleY(0.7);
+        transform: scaleY(0.7);
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+    .border-bottom:after {
+        -ms-transform: scaleY(.5);
+        -o-transform: scaleY(.5);
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 3),
+(min-device-pixel-ratio: 3) {
+    .border-bottom:after {
+        -ms-transform: scaleY(.33);
+        -o-transform: scaleY(.33);
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+}
+
+.has-border {
+    position: relative;
+}
+
+.border-bottom:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #efefef;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform-origin: 0 0;
+}
+
+/*边框border*/
+
+@media (-webkit-device-pixel-ratio: 1.5),
+(min-device-pixel-ratio: 1.5) {
+    .border-has-radius:after {
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+    .border-has-radius:after {
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 3),
+(min-device-pixel-ratio: 3) {
+    .border-has-radius:after {
+        -ms-transform: scale(0.33);
+        -o-transform: scale(0.33);
+        -webkit-transform: scale(0.33);
+        transform: scale(0.33);
+    }
+}
+
+.border-has-radius:after {
+    position: absolute;
+    content: "";
+    top: -50%;
+    bottom: -50%;
+    left: -50%;
+    right: -50%;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #ccc;
+    overflow: hidden;
+}
+
+/* .border-top:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #efefef;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+}
+
+.border-left:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #efefef;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+}
+
+.border-right:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #efefef;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+}
+
+.bor-radius {
+    border-top-left-radius: 50%;
+} */
