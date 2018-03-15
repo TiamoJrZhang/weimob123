@@ -27,3 +27,5 @@ var comAjax = function (url) {
         client.send();
     });
 };
+
+

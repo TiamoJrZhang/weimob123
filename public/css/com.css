@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     text-align: center;
     font-size: 0.36rem;
-    height: 44px;
+    height: 0.88rem;
     padding: 0 0.3rem;
     background: #fff;
 }
@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 49px;
+    height: 0.98rem;
     background: #fff;
     position: fixed;
     -webkit-transform: translateZ(0);
@@ -107,6 +107,8 @@ body {
 @media (-webkit-device-pixel-ratio: 1.5),
 (min-device-pixel-ratio: 1.5) {
     .border-has-radius:after {
+        width: 150%;
+        height: 150%;
         -ms-transform: scale(0.7);
         -o-transform: scale(0.7);
         -webkit-transform: scale(0.7);
@@ -117,6 +119,8 @@ body {
 @media (-webkit-device-pixel-ratio: 2),
 (min-device-pixel-ratio: 2) {
     .border-has-radius:after {
+        width: 200%;
+        height: 200%;
         -ms-transform: scale(0.5);
         -o-transform: scale(0.5);
         -webkit-transform: scale(0.5);
@@ -127,6 +131,8 @@ body {
 @media (-webkit-device-pixel-ratio: 3),
 (min-device-pixel-ratio: 3) {
     .border-has-radius:after {
+        width: 300%;
+        height: 300%;
         -ms-transform: scale(0.33);
         -o-transform: scale(0.33);
         -webkit-transform: scale(0.33);
@@ -135,16 +141,15 @@ body {
 }
 
 .border-has-radius:after {
+    content: '';
     position: absolute;
-    content: "";
-    top: -50%;
-    bottom: -50%;
-    left: -50%;
-    right: -50%;
-    border: 1px solid #ccc;
+    top: 0;
+    left: 0;
+    border: 1px solid #ddd;
     border-radius: 50%;
-    background: #ccc;
-    overflow: hidden;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    background: #fff;
 }
 
 /* .border-top:after {
@@ -178,8 +183,21 @@ body {
     top: 0;
     right: 0;
     transform-origin: 0 0;
+} */
+
+/* 礼盒 */
+.gift-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    z-index: 998;
 }
 
-.bor-radius {
-    border-top-left-radius: 50%;
-} */
+.gift-box img {
+    width: 0.50rem !important;
+    height: 0.50rem !important;
+    z-index: 1000;
+}

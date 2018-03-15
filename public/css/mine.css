@@ -45,7 +45,7 @@
 
 #all-order .see-all {
     color: #999999;
-    margin-right: 5.5px;
+    margin-right: 0.11rem;
 }
 
 #all-order .top {
@@ -53,7 +53,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 40px;
+    height: 0.8rem;
     padding: 0 0.32rem;
 }
 
@@ -97,7 +97,7 @@
 
 #my-info {
     background: #fff;
-    margin-top: 8px;
+    margin-top: 0.16rem;
 }
 
 #my-info ul li:last-child {
@@ -110,7 +110,7 @@
     align-items: center;
     padding: 0 0.367rem 0 0.39rem;
     font-size: 0.26rem;
-    height: 40px;
+    height: 0.8rem;
 }
 
 #my-info .leftIcon {
@@ -132,6 +132,6 @@
 }
 
 #weimob_iocn img {
-    margin-top: 54.5px;
-    margin-bottom: 61px;
+    margin-top: 1.09rem;
+    margin-bottom: 1.22rem;
 }
